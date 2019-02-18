@@ -17,13 +17,12 @@ for (i = 0; i < acc.length; i++) {
   });
 } 
 
-var questao01,questao02,questao03,questao04,questao05,questao06;
-var questao07,questao08,questao09,questao10,questao11,questao12;
-var questao13,questao14,questao15,questao16,questao17,questao18;
-var questao19,questao20;
+var questao01,questao02,questao03,questao04,questao05,questao06,
+questao07,questao08,questao09,questao10,questao11,questao12,
+questao13,questao14,questao15,questao16,questao17,questao18,questao19,questao20;
 
 var x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19,x20;
-var tipoA,tipoB;
+var tipoA,tipoB,tipoC,tipoD,tipoE;
 
 function calcular(){
     
@@ -617,13 +616,59 @@ switch(questao20) {
     default:
     // code block
 } 
-  //alert(x1,x2,x3,x4,x5,x6,x7x8,x9,x10,x11,x12.x13,x14,x15,x16,x17,x18,x19,x20);
-  
-  
 
-  tipoA =x1+x4+x16+x20;
+  tipoA = x1+x4+x16+x20;
   tipoB = x2+x3+x9+x19;
+  tipoC = x5+x7+x12+x15;
+  tipoD = x6+x8+x14+x17;
+  tipoE = x10+x11+x13+x18;
+  //alert(tipoA);
+  
+  google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
 
-  alert(tipoA);
+      function drawStuff() {
+        
+        var data = new google.visualization.arrayToDataTable([
+          ['Move', 'Percentage'],
+          ["Necessidades Fisiológicas", tipoA],
+          ["Necessidade de Segurança", tipoB],
+          ["Necessidade de Participação", tipoC],
+          ["Necessidade de Auto-reconhecimento", tipoD],
+          ["Necessidade de Auto-realização", tipoE]
+            
+          
+        ]);
+
+        var options = {
+          width: 900,
+          legend: { position: 'none' },
+          chart: {
+            title: 'Chess opening moves',
+            subtitle: 'popularity by percentage' },
+          axes: {
+            x: {
+              0: { side: 'top', label: 'Gráfico motivacional'} // Top x-axis.
+            }
+          },
+          bar: { groupWidth: "90%" }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+        // Convert the Classic options to Material options.
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      };
+
+     var content = document.getElementsByClassName('container')[0];
+document.getElementsByClassName('btn')[0].addEventListener('click',function(){
+    content.style.display = "block";
+});
+document.getElementsByClassName('x')[0].addEventListener('click',function(){
+    content.style.display = "none";
+});
+  
 
 }
+
+
+     
