@@ -449,7 +449,7 @@ switch(questao14) {
 } 
 
 switch(questao15) {
-     case "conInt16":
+     case "conInt15":
          x15 = 3;
     break;
     case "concordo15":
@@ -631,11 +631,11 @@ switch(questao20) {
         
         var data = new google.visualization.arrayToDataTable([
           ['Move', 'Percentage'],
-          ["Necessidades Fisiológicas", tipoA],
-          ["Necessidade de Segurança", tipoB],
-          ["Necessidade de Participação", tipoC],
-          ["Necessidade de Auto-reconhecimento", tipoD],
-          ["Necessidade de Auto-realização", tipoE]
+          ["Fisiológicas", tipoA],
+          ["Segurança", tipoB],
+          ["Participação", tipoC],
+          ["Auto-reconhecimento", tipoD],
+          ["Auto-realização", tipoE]
             
           
         ]);
@@ -643,9 +643,7 @@ switch(questao20) {
         var options = {
           width: 900,
           legend: { position: 'none' },
-          chart: {
-            title: 'Chess opening moves',
-            subtitle: 'popularity by percentage' },
+          chart: { },
           axes: {
             x: {
               0: { side: 'top', label: 'Gráfico motivacional'} // Top x-axis.

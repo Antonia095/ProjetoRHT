@@ -156,7 +156,7 @@ a {
   text-decoration: none;
   background-color: transparent;
 }
-
+vertical-align: middle
 a:hover {
   color: #0056b3;
   text-decoration: underline;

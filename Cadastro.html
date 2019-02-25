@@ -40,6 +40,9 @@
     <center>
       <h2>Cadastre-se para responder ao formulário</h2>
        <hr/>
+        
+        <!--FORMULÁRIO-->
+   <form name="formuser">        
       <b>Nome:</b><br/>
       <input type="text" name="nome" size="25" id="inputNome"><br/><br/>
       <b>Cargo:</b><br/>
@@ -60,7 +63,8 @@
       <b>Confirme sua senha:</b><br/> 
       <input type="password" name="confirmacao" size="23">
       <br/><br/>
-        <button id="btCadastrar">Cadastrar</button>
+        <input type="submit" onclick="return validar()"/>
+      </form> 
     </center>
     <script src="Cadastro.js"></script>
    </body>
