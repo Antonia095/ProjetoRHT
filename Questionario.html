@@ -49,22 +49,13 @@
       overflow: hidden;
       transition: max-height 0.2s ease-out;
     }
+        body.corpo{
+            background-color: LightGray;
+        }
     </style>
     </head>
-    <body>
-    <!--
-    <nav class="navbar navbar-default">
-        <div class="container">
-           <div class="navbar-head"> 
-        <a  class="navbar-brand" href="Gerenciamento.html">Gerenciamento Motivacional</a>
-          <a class="navbar-brand" href='#'>Home</a>
-          <a class="navbar-brand" href='Cadastro.html'>Cadastro</a>
-          <a class="navbar-brand" href='Entrar.html'>Entrar</a>
-       
-            </div>
-        </div>
-    </nav>  
-    -->
+    <body class="corpo">
+    
      <!-- MENU -->   
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
@@ -79,7 +70,7 @@
        </div>
        <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-             <li><a href="#">Questionário</a></li>
+             
              <li><a href="Gerenciamento.html">Sobre</a></li>
           </ul>
          <ul class="nav navbar-nav navbar-right">
@@ -92,24 +83,62 @@
     
         
         
-    <h2>SIGNIFICADOS DA PONTUAÇÃO</h2>
+    
+    <center> <h2>SIGNIFICADOS DA PONTUAÇÃO</h2></center>
+    <hr/>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Pontuação</th>
+          <th scope="col">Opção</th>
 
-    <ul style="list-style-type:square">
-      <li>+3= Concordo inteiramente</li>
-      <li>+2= Concordo</li>
-      <li>+1 = Concordo parcialmente</li>
-      <li>0 = Estou em duvida</li>
-      <li>-1=Discordo parcialmente</li>
-      <li>+1 = Concordo parcialmente</li>
-      <li>-2=Discordo</li>
-      <li>-3=Discordo inteiramente</li>
-    </ul>
+        </tr>
+      </thead>
+      <tbody>
+    <tr>
+      <th scope="row">+3</th>
+      <td>Concordo inteiramente</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">+2</th>
+      <td>Concordo</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">+1</th>
+    
+      <td>Concordo parcialmente</td>
+    </tr>
+    <tr>
+     <th scope="row">0</th>
+        <td>Estou em duvida</td>
+    </tr>
+    <tr>
+     <th scope="row">-1</th>
+        <td>Discordo parcialmente</td>
+    </tr>
+    <tr>
+    <th scope="row">+1</th>
+        <td>Concordo parcialmente</td>
+    </tr>
+    <tr>
+    <th scope="row">-2</th>
+        <td>Discordo</td>
+    </tr>
+    <tr>
+    <th scope="row">-3</th>
+        <td>Discordo inteiramente</td>
+    </tr>
+  </tbody>
+</table>
+<hr/>
 
     <h2>Questionário</h2>
 
     <button class="accordion">Questão 1</button>
     <div class="panel">
-      <p>Dar gratificação em dinheiro para o trabalho bem feito?</p>
+      <p>Dá gratificação em dinheiro para o trabalho bem feito?</p>
        <form name="form1">
           <select name="sing1">
             <option value="pontuacao01">Selecione</option>
@@ -163,7 +192,7 @@
 
     <button class="accordion">Questão 4</button>
     <div class="panel">
-      <p>A chefia tem que dar muita importância as condições físicas de trabalho dos empregados?</p>
+      <p>A chefia tem que dá muita importância as condições físicas de trabalho dos empregados?</p>
        <form name="form4">
          <select name="sing4">
             <option value="pontuacao04">Selecione</option>
@@ -199,7 +228,7 @@
 
     <button class="accordion">Questão 6</button>
     <div class="panel">
-      <p>É importante ter um reconhecimento individual?</p>
+      <p>É importante ter um reconhecimento indivual?</p>
        <form name="form6">
          <select name="sing6">
             <option value="pontuacao06">Selecione</option>
@@ -307,7 +336,7 @@
 
     <button class="accordion">Questão 12</button>
     <div class="panel">
-      <p>É importante a empresa mostrar maior interesse pelos empregados como, por exemplo, patrocioná-lo em eventos sociais fora do expediente de trabalho?</p>
+      <p>É importante a empresa mostrar maior interesse pelos empregados como, por exemplo, patrociona-lo em eventos sociais fora do expediente de trabalho?</p>
        <form name="form12">
          <select name="sing12">
             <option value="pontuacao12">Selecione</option>
@@ -433,7 +462,7 @@
 
     <button class="accordion">Questão 19</button>
     <div class="panel">
-      <p>Para você é importante se sentir seguro no emprego?</p>
+      <p>Para você é importante ser notado pela alta gerência da empresa?</p>
        <form name="form19">
          <select name="sing19">
             <option value="pontuacao19">Selecione</option>

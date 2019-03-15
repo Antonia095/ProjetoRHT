@@ -49,7 +49,7 @@ function validar(){
                     return false;
                 }
                 alert("Cadastro realizado com sucesso!");
-                
+                open("Questionario.html");
            
      
  sessionStorage.setItem('s', senha);

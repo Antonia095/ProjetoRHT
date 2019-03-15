@@ -7,10 +7,14 @@
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-                
-
+       <style>
+          body.corpo{
+            background-color: LightGray;
+        }
+       </style>         
+       
   </head>
-  <body>
+  <body class="corpo">
       
       <!--MENU-->
     <nav class="navbar navbar-inverse">
@@ -26,7 +30,6 @@
        </div>
        <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-             <li><a href="Questionario.html">Questionário</a></li>
              <li><a href="Gerenciamento.html">Sobre</a></li>
           </ul>
          <ul class="nav navbar-nav navbar-right">
@@ -43,28 +46,29 @@
         
         <!--FORMULÁRIO-->
    <form name="formuser">        
-      <b>Nome:</b><br/>
-      <input type="text" name="nome" size="25" id="inputNome"><br/><br/>
-      <b>Cargo:</b><br/>
-      <input type="text" name="cargo" size="25" id="inputCargo"><br/><br/>
-      <b>Idade:</b><br/>
+      <b>Nome:</b>
+      <input type="text" name="nome" size="25" id="inputNome" placeholder="Informe seu nome" ><br/><br/>
+      <b>Cargo:</b>
+      <input type="text" name="cargo" size="25" id="inputCargo" placeholder="Informe seu cargo"><br/><br/>
+      <b>Idade:</b>
       <input type="number" name="idade" size="25" id="inputIdade"><br/><br/>
-      <b>Dependentes:</b><br/>
+      <b>Dependentes:</b>
       <input type="number" name="dependentes" size="25" id="inpuDependentes"><br/><br/>
-      <b>Email:</b><br/>
-      <input type="text" name="email" size="25" id="inputEmail"><br/>
+      <b>Email:</b>
+      <input type="text" name="email" size="25" id="inputEmail" placeholder="Informe seu email"><br/>
       
       <h3>Informe o login e a senha que deseja usar na aplicação</h3>
-      <b>Login:</b><br/>
-       <input type="text" name="login" size="23"><br/><br/>
-      <b>Senha:</b><br/>
-      <input type="password" name="senha" size="23">
+      <b>Login:</b>
+       <input type="text" name="login" size="23" placeholder="Informe o email"><br/><br/>
+      <b>Senha:</b>
+      <input type="password" name="senha" size="23" placeholder="**********">
       <br/><br/>
-      <b>Confirme sua senha:</b><br/> 
-      <input type="password" name="confirmacao" size="23">
+      <b>Confirme sua senha:</b>
+      <input type="password" name="confirmacao" size="23" placeholder="***************">
       <br/><br/>
-        <input type="submit" onclick="return validar()"/>
-      </form> 
+        <input type="submit" onclick="validar()"/>
+      </form>
+    
     </center>
     <script src="Cadastro.js"></script>
    </body>
