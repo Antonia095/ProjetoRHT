@@ -50,7 +50,18 @@
       transition: max-height 0.2s ease-out;
     }
         body.corpo{
-            background-color: LightGray;
+            background: LightGray url(img/grafico.png);
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+           background-position: bottom right;
+           background-size: 300px 300px;
+           
+        }
+        h4.titulo{
+            color: darkcyan;
+        }
+        h2.tituloQuestao{
+            color: darkcyan;
         }
     </style>
     </head>
@@ -84,7 +95,7 @@
         
         
     
-    <center> <h2>SIGNIFICADOS DA PONTUAÇÃO</h2></center>
+    <center> <h4 class="titulo">SIGNIFICADOS DA PONTUAÇÃO</h4></center>
     <hr/>
     <table class="table table-striped">
       <thead>
@@ -134,7 +145,7 @@
 </table>
 <hr/>
 
-    <h2>Questionário</h2>
+    <center><h2 class="tituloQuestao">Questionário</h2></center>
 
     <button class="accordion">Questão 1</button>
     <div class="panel">
@@ -497,7 +508,7 @@
     </div>
     <center>
             <form>
-                <input type="button" value="Enviar" onclick="calcular()">
+                <input  class="btn  btn-primary " type="button" value="Enviar" onclick="calcular()">
                 <a href="#topo">topo</a>
             </form>
     </center>
